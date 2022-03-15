@@ -1,0 +1,31 @@
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(auto-fill ,minmax(250px,1fr));
+    gap:50px;
+    color:white;
+}
+.about .box{
+    border:2px solid var(--color-bg-variant);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    box-shadow: 10px 10px 10px 10px var(--color-bg-variant);
+    text-align: center;
+    transition: all 1s ;
+}
+
+.about .box .icon{
+    font-size: 20px;
+    color:var(--main-color);
+    margin-top: 10px;
+}
+
+.about .box:hover{
+    transform: translateY(-20px);
+    background-color: white;
+    color:black;
+}
